@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+			crossorigin="anonymous"
+		/>
+		<title>Storage</title>
+	</head>
+	<body>
+		<section>
+			<div class="container col-12 col-md-5">
+				<div class="card text-start|center|end">
+					<div class="card-body">
+						<h4 class="card-title">Imagen</h4>
+						<p class="card-text" id="name"></p>
+						<img class="card-img-top" alt="Imagen a subir" id="img" />
+					</div>
+				</div>
+			</div>
+		</section>
+		<main>
+			<div class="container col-12 col-md-5">
+				<div class="card text-start">
+					<div class="card-body">
+						<h4 class="card-title">Title</h4>
+						<form action="">
+							<div class="mb-3">
+								<label for="inputFile" class="form-label"
+									>Selecciona imagen:</label
+								>
+								<input
+									class="form-control"
+									type="file"
+									id="inputFile"
+									name="inputFile"
+								/>
+							</div>
+							<div class="d-grid mb-3">
+								<button class="btn btn-primary" id="btnSubir" name="btnSubir">
+									Subir
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+			crossorigin="anonymous"
+		></script>
+		<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-storage.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>
